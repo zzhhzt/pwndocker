@@ -1,7 +1,7 @@
 version: '3'
 services:
     pwn:
-        container_name: pwn_test
+        container_name: pwn22
         image: skysider/pwndocker
         security_opt:
             - seccomp:unconfined
@@ -9,3 +9,4 @@ services:
             - SYS_PTRACE
         ports:
             - "23946:23946"
+            - "1022:22"
